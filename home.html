@@ -1,0 +1,188 @@
+<style>
+    h1 {
+        color: red;
+        text-align: center;
+    }
+    .center {
+        margin: auto;
+        width: 50%;
+    }
+    .forPopup {
+        /* display: table-cell;
+        background-color: aquamarine;
+        border: 3px solid #998;
+        border-radius: 30px;
+        text-align: center;
+        width: 60%; */
+
+        display: none;
+        position: absolute;
+        color: white;
+        padding: 40px;
+        border: solid 1px #ddd;
+        border-radius: 30px;
+        background: green;
+        text-align: center;
+        width: 10%;
+
+    }
+    .popupCloseButton {
+        background-color: #fff;
+        border: 3px solid #999;
+        border-radius: 50px;
+        cursor: pointer;
+        display: inline-block;
+        font-family: arial;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+    }
+    .popupCloseButton:hover {
+        background-color: #ccc;
+    }
+    
+</style>
+
+<!DOCTYPE html>
+<title>Taste of Tamil Nadu</title>
+<body>
+
+    <script src="D:/Self_Dev/Me_Deepan_Project/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="D:/Self_Dev/Me_Deepan_Project/node_modules/jquery/dist/jquery.imagemapster.min.js"></script>
+    
+
+    <h1>The Go to Dishes for Districts of Tamil Nadu</h1>
+    <br>
+
+    <div>
+        <div class="center" id="tnmapdiv">
+            <img id="tnfoodimg" src="tamilnadu-map-unedited.png" usemap="#tnfoods">
+
+            <map name="tnfoods">
+                <area target="" alt="Madurai" title="Madurai" href="#" coords="272,384,279,384,281,379,291,379,298,383,318,382,324,374,330,372,330,365,334,360,345,361,355,356,355,329,353,323,340,340,334,333,319,341,292,346" shape="poly">
+                <area target="" alt="Dindigul" title="Dindigul" href="#" coords="247,335,250,329,256,321,261,303,261,290,287,284,292,289,301,286,317,288,315,277,328,277,333,283,334,296,345,305,346,325,339,337,292,343,291,330,261,337" shape="poly">
+                <area target="" alt="Tiruvallur" title="Tiruvallur" href="#" coords="535,57,539,51,537,44,540,39,537,30,526,28,517,26,515,19,505,32,494,41,486,42,486,48,471,44,455,39,456,47,444,58,454,64,470,59,479,52,486,60,491,70,497,79,529,71,524,67,526,64,524,67" shape="poly">
+                <area target="" alt="Chennai" title="Chennai" href="#" coords="535,70,529,57,534,57,526,71,525,65,534,64" shape="poly">
+                <area target="" alt="Vellore" title="Vellore" href="#" coords="358,105,363,124,373,124,381,136,392,125,402,106,406,100,415,98,424,91,433,91,438,87,442,90,446,93,450,100,455,91,461,82,466,82,476,78,486,69,478,55,456,65,438,55,431,66,411,60,406,66,388,67,378,89" shape="poly">
+                <area target="" alt="Krishnagiri" title="Krishnagiri" href="#" coords="354,103,325,84,309,83,301,96,285,100,285,116,285,126,273,137,286,142,300,148,312,128,325,123,337,122,355,137,379,138,370,141,372,128,375,131" shape="poly">
+                <area target="" alt="Kancheepuram" title="Kancheepuram" href="#" coords="500,142,508,137,514,130,522,115,530,97,531,83,532,71,498,80,488,70,478,77,467,83,485,93,476,104,485,116,476,132,484,141,491,144" shape="poly">
+                <area target="" alt="Tiruvannamalai" title="Tiruvannamalai" href="#" coords="474,131,483,116,474,103,482,92,460,82,450,99,435,89,414,98,394,121,391,131,382,139,387,151,386,165,400,162,416,161,428,161,437,156,435,145,438,137,436,122,448,122,461,129" shape="poly">
+                <area target="" alt="Dharmapuri" title="Dharmapuri" href="#" coords="307,142,300,153,292,167,302,172,317,173,333,168,341,166,352,172,350,181,360,177,379,179,384,168,382,148,368,143,335,125,321,126,310,130" shape="poly">
+                <area target="" alt="Villupuram" title="Villupuram" href="#" coords="485,167,494,163,505,145,480,140,458,129,436,123,440,134,436,146,440,154,429,161,416,162,400,164,387,166,382,176,382,192,392,193,399,207,408,205,418,200,428,200,445,196,442,172,455,176,476,185,486,186,488,180,476,163" shape="poly">
+                <area target="" alt="Salem" title="Salem" href="#" coords="393,217,381,217,377,224,368,220,364,203,356,206,337,210,320,210,311,215,294,208,301,194,291,195,290,176,302,174,321,173,344,170,352,183,368,181,379,181,382,196,392,198,397,207" shape="poly">
+                <area target="" alt="Erode" title="Erode" href="#" coords="300,252,310,250,309,243,307,234,292,216,293,209,298,195,289,197,288,183,286,176,289,171,277,169,269,181,259,182,239,185,224,181,214,197,224,207,222,216,231,217,238,221,245,221,253,226,259,227,266,243,287,242" shape="poly">
+                <area target="" alt="The_Nilgiris" title="The_Nilgiris" href="#" coords="155,208,159,202,167,200,173,193,179,192,185,196,198,198,208,200,215,202,220,207,220,217,211,224,197,232,175,234,181,222,170,212" shape="poly">
+                <area target="" alt="Coimbatore" title="Coimbatore" href="#" coords="197,235,213,227,221,222,230,218,235,221,227,228,225,236,231,247,227,256,231,264,235,267,238,280,240,289,235,295,230,301,228,309,231,317,223,325,212,322,208,289,214,281,215,274,207,265,194,260,198,252,203,249" shape="poly">
+                <area target="" alt="Tiruppur" title="Tiruppur" href="#" coords="231,316,240,314,249,323,255,310,258,301,259,287,285,281,292,284,300,279,302,271,296,253,275,243,257,228,239,222,226,233,234,243,229,255,238,264,241,286,240,294,232,298" shape="poly">
+                <area target="" alt="Namakkal" title="Namakkal" href="#" coords="310,249,320,246,329,248,333,253,348,248,353,241,362,220,362,209,352,206,334,211,322,213,315,213,300,214,293,215,307,233" shape="poly">
+                <area target="" alt="Perambalur" title="Perambalur" href="#" coords="379,226,383,218,393,217,399,210,407,215,420,219,426,222,424,230,418,237,419,245,406,244,395,239,385,238" shape="poly">
+                <area target="" alt="Karur" title="Karur" href="#" coords="304,284,305,274,302,263,302,253,316,252,326,250,335,258,355,263,366,267,366,275,357,280,343,278,344,288,336,294,336,274,315,274,313,286" shape="poly">
+                <area target="" alt="Tiruchirappalli" title="Tiruchirappalli" href="#" coords="353,318,349,307,339,299,345,286,354,280,364,280,371,271,363,264,346,259,338,254,348,252,356,242,363,230,366,223,377,228,382,240,396,243,406,246,418,250,420,261,408,266,402,273,397,283,386,280,373,288,364,289,362,296,366,304,372,300,372,307,367,314" shape="poly">
+                <area target="" alt="Cuddalore" title="Cuddalore" href="#" coords="458,242,471,233,485,221,483,199,485,189,444,175,445,199,417,203,404,210,423,218,445,218,458,226,463,230" shape="poly">
+                <area target="" alt="Ari_yalur" title="Ari_yalur" href="#" coords="422,258,420,243,426,231,429,224,446,222,458,230,455,241,443,252,432,256" shape="poly">
+                <area target="" alt="Thanjavur" title="Thanjavur" href="#" coords="459,254,458,243,448,252,436,258,422,263,416,268,410,265,401,276,400,282,408,291,420,290,427,295,427,305,426,315,420,320,415,324,421,327,427,335,432,334,436,330,443,322,459,319,466,316,463,304,447,298,441,289,432,281,433,272,440,271,446,271,452,273,455,268,454,261" shape="poly">
+                <area target="" alt="Tiruvarur" title="Tiruvarur" href="#" coords="468,315,473,315,475,307,478,299,481,294,477,286,480,281,480,273,484,267,481,259,465,261,457,271,447,274,433,276,445,294,463,301" shape="poly">
+                <area target="" alt="Nagapattinum" title="Nagapattinum" href="#" coords="490,323,490,269,481,272,482,281,478,286,484,292,475,316,466,322" shape="poly">
+                <area target="" alt="Pudukkottai" title="Pudukkottai" href="#" coords="433,347,431,337,421,334,419,326,413,323,420,319,424,310,424,298,411,293,399,287,387,283,379,289,368,293,366,299,375,299,375,307,370,313,364,329,374,323,380,324,381,333,390,332,398,336,406,336,406,342,412,347,414,355,420,360" shape="poly">
+                <area target="" alt="Sivagangai" title="Sivagangai" href="#" coords="360,338,363,332,375,326,379,334,389,335,397,338,402,340,408,348,411,354,401,356,398,366,391,355,382,357,382,369,388,375,390,385,381,387,375,390,364,386,355,386,349,379,343,376,333,371,335,363,356,356,362,347" shape="poly">
+                <area target="" alt="Virudhunagar" title="Virudhunagar" href="#" coords="253,404,263,392,271,385,281,385,287,381,295,384,310,384,321,384,324,374,336,374,340,380,345,381,351,386,346,395,339,402,344,409,348,411,344,418,335,408,322,408,313,422,301,431,298,420,281,415" shape="poly">
+                <area target="" alt="Ramanadhapuram" title="Ramanadhapuram" href="#" coords="419,364,411,357,401,360,397,367,387,359,385,369,392,374,392,385,378,391,357,388,343,402,351,411,345,420,347,429,353,429,373,426,386,422,399,417,415,416,437,415,407,409,400,391" shape="poly">
+                <area target="" alt="Theni" title="Theni" href="#" coords="255,387,242,385,244,372,246,356,249,350,246,343,249,338,258,341,273,336,288,333,289,344,283,358,270,383,260,391" shape="poly">
+                <area target="" alt="Thoothukudi" title="Thoothukudi" href="#" coords="304,508,317,505,325,491,326,481,327,473,333,467,332,450,338,443,349,435,341,428,342,419,333,410,323,413,313,425,306,432,294,429,288,431,287,446,294,448,299,458,301,474,297,483" shape="poly">
+                <area target="" alt="Tirunelveli" title="Tirunelveli" href="#" coords="254,410,266,412,277,416,289,420,297,426,285,429,284,444,290,449,292,457,297,465,296,478,295,491,302,509,295,516,285,519,277,523,270,501,263,493,250,482,240,470,247,455,239,442,247,431" shape="poly">
+                <area target="" alt="KanniyaKumari" title="KanniyaKumari" href="#" coords="273,527,250,524,237,515,233,509,242,502,244,493,249,489,258,491,263,499,269,505" shape="poly">
+            </map>
+
+        </div>
+
+        <div id="popup" class="forPopup">
+            <div id="popupClose">
+                <button id="popupClose">&times;</button>
+            </div>
+            <p id="districtInfo"></p>
+        </div>
+    </div>
+
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function() {
+            
+            $("#popup").hide();
+
+            var districtInfo="";
+
+            var values = {
+                Madurai : "This is madurai",
+                Dindigul : "This is Dindigul",
+                Tiruvallur : "This is Tiruvallur",
+                Chennai : "This is Chennai",
+                Vellore : "This is Vellore",
+                Krishnagiri : "This is Krishnagiri",
+                Kancheepuram : "This is Kancheepuram",
+                Tiruvannamalai : "This is Tiruvannamalai",
+                Dharmapuri : "This is Dharmapuri",
+                Villupuram : "This is madurai",
+                Salem : "This is madurai",
+                Erode : "This is madurai",                
+                The_Nilgiris : "This is madurai",
+                Coimbatore : "This is madurai",
+                Tiruppur : "This is madurai",
+                Namakkal : "This is madurai",
+                Perambalur : "This is madurai",
+                Karur : "This is madurai",
+                Tiruchirappalli : "This is madurai",
+                Cuddalore : "This is madurai",
+                Ari_yalur : "This is madurai",
+                Thanjavur : "This is madurai",
+                Tiruvarur : "This is madurai",
+                Nagapattinum : "This is madurai",
+                Pudukkottai : "This is madurai",
+                Sivagangai : "This is madurai",
+                Virudhunagar : "This is madurai",
+                Ramanadhapuram : "This is madurai",
+                Theni : "This is madurai",
+                Thoothukudi : "This is madurai",
+                Tirunelveli : "This is madurai",
+                KanniyaKumari : "This is madurai",
+            }
+
+            var image = $('#tnfoodimg');
+            image.mapster({
+                fillColor: "d42e16",
+                stroke: true,
+                //strokeColor: "3320FF",
+                //strokeOpacity: 0.8,
+                //strokeWidth: 4,
+                singleSelect: true,
+                mapKey: 'title',
+                listKey: 'title',
+                onClick: function(e){
+                    districtInfo = values[e.key];
+                    //document.getElementById("districInfo").innerHTML = districtInfo;
+                    //window.alert(districtInfo);
+                    //$('popup').show();
+                    clickMap(e, districtInfo);
+                }
+            })
+
+            function clickMap(e, districtInfo){
+                document.getElementById("districtInfo").innerHTML = districtInfo;
+                // $("#popup").show();
+                
+                $("#popup").css({left: e.e.pageX});
+                $("#popup").css({top: e.e.pageY});
+                $("#popup").show();
+            }
+
+            document.getElementById("popupClose").addEventListener("click", myFunction, false);
+
+            function myFunction() {
+                $("#popup").hide();
+            }
+
+        });
+    </script>
+    
+</body>
